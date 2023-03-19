@@ -1,0 +1,59 @@
+.container{
+    height:100vh;
+    padding: 5rem;
+    box-sizing: border-box;
+}
+
+.vector-graphics{
+
+filter :drop-shadow(0 40px 10px rgba(0,0,0,0.3));
+animation: vectoranimation 1s infinite ease-in-out alternate ;
+
+}
+@keyframes vectoranimation {
+    to{
+        transform: translateY(-10px);
+    }
+}
+
+
+.brandsbanner > svg{
+    color: white;
+    font-size: 3rem;
+    transform: color 0.5s
+    ;
+
+}
+
+.brandsbanner> svg:hover{
+    color:rgba(225,221,0);
+}
+
+.container2{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.container-2  video{
+    height:10px;
+    border: 1px solid rgba(0,0,0,0.18);
+    width: 60%;
+    border-radius: 5
+    
+    px;
+    outline:none
+}
+
+.course{
+    width: 250px;
+    margin-bottom: 1rem;
+    transition: all 0.5s;
+
+}
+
+.course:hover{
+    transform: translateY(-10px);
+}

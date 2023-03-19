@@ -1,0 +1,98 @@
+import { createReducer } from "@reduxjs/toolkit";
+
+export const adminReducer=createReducer({},{
+createCourseRequest:(state,action)=>{
+    state.loading=true
+}
+,
+createCourseSuccess:(state,action)=>{
+    state.loading=fasle
+    state.message=action.payload
+},
+createCourseFail:(state,action)=>{
+    state.loading=false
+    state.error=action.payload
+},
+deleteCourseRequest:(state,action)=>{
+    state.loading=true
+}
+,
+deleteCourseSuccess:(state,action)=>{
+    state.loading=fasle
+    state.message=action.payload
+},
+deletecreateCourseFail:(state,action)=>{
+    state.loading=false
+    state.error=action.payload
+},
+addLectureRequest:(state,action)=>{
+    state.loading=true
+}
+,
+addLectureSuccess:(state,action)=>{
+    state.loading=fasle
+    state.message=action.payload
+},
+addLectureFail:(state,action)=>{
+    state.loading=false
+    state.error=action.payload
+},
+deleteLectureRequest:(state,action)=>{
+    state.loading=true
+}
+,
+deleteLectureSuccess:(state,action)=>{
+    state.loading=fasle
+    state.message=action.payload
+},
+deleteLectureFail:(state,action)=>{
+    state.loading=false
+    state.error=action.payload
+},
+
+getAllUserRequest:(state,action)=>{
+    state.loading=true
+}
+,
+getAllUserSuccess:(state,action)=>{
+    state.loading=fasle
+    state.users=action.payload
+},
+getAllUserFail:(state,action)=>{
+    state.loading=false
+    state.error=action.payload
+},
+deleteUserRequest:(state,action)=>{
+    state.loading=true
+}
+,
+deleteUserSuccess:(state,action)=>{
+    state.loading=fasle
+    state.users=action.payload
+},
+deleteUserFail:(state,action)=>{
+    state.loading=false
+    state.error=action.payload
+},
+updateUserRoleRequest:(state,action)=>{
+    state.loading=true
+}
+,
+updateUserRoleSuccess:(state,action)=>{
+    state.loading=fasle
+    state.users=action.payload
+},
+updateUserRoleFail:(state,action)=>{
+    state.loading=false
+    state.error=action.payload
+},
+clearError:(state)=>{
+    state.error=null
+    
+        },
+        clearMessage:(state)=>{
+            state.message=null
+        }
+
+
+})
